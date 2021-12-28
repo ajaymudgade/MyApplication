@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray200"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/this_question_is_being_ask_for"
+        android:textColor="@color/gray500" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="155dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/txtView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:buttonTint="#FF0C0C0C"
+        android:text="@string/shruti" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="155dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/txtView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/radioButton1"
+        android:background="@color/white"
+        android:buttonTint="#FF0C0C0C"
+        android:text="@string/anushka" />
+
+    <RelativeLayout
+        android:id="@+id/rlmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llmain"
+        android:layout_below="@id/radioButton1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white">
+
+        <AutoCompleteTextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@null"
+            android:hint="@string/write_your_question_here"
+            android:padding="10dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/editText"
+            android:padding="12dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgAttachment"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/ic_baseline_attach_file_24" />
+
+        <TextView
+            android:id="@+id/txtAttachments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/attachments"
+            android:textColor="@color/gray500"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/postButton"
+            android:layout_width="72dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="200dp"
+            android:background="@drawable/round_button"
+            android:text="@string/post" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="attachments">Attachments</string>
+    <string name="write_your_question_here">Write your question here</string>
+    <string name="this_question_is_being_ask_for">This question is being ask for: </string>
+    <string name="your_identity_will_not_be_revealed">Your identity will not be revealed</string>
+    <string name="post">Post</string>
+    <string name="shruti">Shruti</string>
+    <string name="anushka">Anushka</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+</resources>
